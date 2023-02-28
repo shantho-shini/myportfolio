@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body{
+        background-image:url('wallpaper.jfif') ;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+        .container {
+            position: relative;
+          }
+          
+          /* Bottom right text */
+
+        .flip-card {
+            margin-top: 2%;
+            background-color:transparent;
+            width: 600px;
+            height: 300px;
+            perspective: 1000px;
+          }
+      
+          .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          }
+      
+          .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+          }
+      
+          .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+          }
+      
+          .flip-card-front {
+            background-color: #bbb;
+            color: black;
+          }
+      
+          .flip-card-back {
+            
+            background-color: black;
+            color: white;
+            transform: rotateY(180deg);
+          }
+          .button{
+            
+            text-align: center;
+            margin-top: 4%;
+            margin-left: 80%;
+            background-color: white; 
+            color: black; 
+            border: 2px solid #070707;
+            display: inline-block;
+            font-size: 16px;
+            
+          }
+          .button:hover {
+            background-color:#00cc00;
+            color: white;
+          }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+      
+    <div class="container">
+    <div class="flip-card" style="margin-left:5%;"">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="C:\Users\user\OneDrive\Desktop\superdream\portfolio\ner.jfif" width="100%" height="100%">
+
+          </div>
+          <div class="flip-card-back" >
+            <h3 style="margin-top: 15%;">NAMED ENTITY RECOGNITION</h3> 
+            <p>Used Spacy for Lematization, Tokenization, POStagging, etc.,</p> 
+            <p>Used NLTK for Stemming, Parsing and Tagging.</p>
+            <p>Used Genism to process raw and unfinished data.</p>
+      
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" style="margin-left: 55%; margin-top:-20%">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="C:\Users\user\OneDrive\Desktop\superdream\portfolio\regional.png" width="100%" height="100%">
+          </div>
+          <div class="flip-card-back">
+            <h3 style="margin-top: 15%;">REGIONAL LANGUAGE TRANSLATOR</h3> 
+            <p>Used Gradio for front end.</p> 
+            <p>Used Googletans, gTTS,Playsound and voice recognition for backend.</p>
+            <p>Performed traslations for 19 Indian regional languages .</p>
+      
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" style="margin-left: 30%;">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="C:\Users\user\OneDrive\Desktop\superdream\portfolio\diabetes.PNG" width="100%" height="100%">
+            
+          </div>
+          <div class="flip-card-back">
+            <h3 style="margin-top: 15%;">DIABETES PREDICTION(MINI PROJECT)</h3> 
+            <p>Support Vector Machine model is used.</p> 
+            <p>Prediction of presence of diabetes is done using machine learning</p>
+      
+          </div>
+        </div>
+      </div>
+      
+        <button class="button" ><a href="file:///C:/Users/user/OneDrive/Desktop/superdream/portfolio/portfolio.html">BACK</button>
+      
+      
+    </div>
+    
+        
+
+      </div>
+
+    
+</body>
+</html>

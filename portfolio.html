@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body{
+        background-image:url('mainwallpaper.jpg') ;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      body {
+        margin: 0;
+      }
+        .home {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: -webkit-sticky; /* Safari */
+            position: sticky;
+            top: 0;
+          }
+          
+          .home li {
+            float: left;
+          }
+          
+          .home li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 24px 15px;
+            text-decoration: none;
+          }
+          
+          .home li a:hover {
+            background-color: #4CAF50;
+          }
+          
+          .active {
+            background-color: #4CAF50;
+          }
+          .column {
+            float: left;
+            padding: 10px;
+          }
+          
+          /* Left and right column */
+          .column.side {
+            width: 70%;
+            display: flex;
+          }
+          
+ 
+          .column.bottom{
+            width:16%;
+          }
+          .column.bottom1{
+            margin-top: -0.1%;
+            width: 16%;
+          }
+          .column.bottom2{
+            margin-top: -0.1%;
+            width: 16%;
+          }
+          .column.bottom3{
+            margin-top: -0.1%;
+            width: 16%;
+          }
+          .column.bottom4{
+            margin-top: -0.1%;
+            width: 16%;
+          }
+          .column.bottom5{
+            margin-top: -0.1%;
+            width: 16%;
+          }
+          /* Clear floats after the columns */
+          .row:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+          
+          /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+          @media screen and (max-width: 600px) {
+            .column.side, .column.middle,.card1,.home{
+              width: 100%;
+            }
+          }
+          
+@media screen and (max-width: 600px) {
+  /* For mobile phones: */
+  .column.bottom, .column.bottom1, .column.bottom2,.column.bottom3,.column.bottom4,.column.bottom5 {
+    width: 100%;
+  }
+}
+          #school{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            width: 75%;
+          }
+          
+          #school li{
+            border: 1px solid #ddd;
+            margin-top: 20px; /* Prevent double borders */
+            /*background-color: #f6f6f6;*/
+            padding: 12px;
+            width: 100%;
+            /*background-color:#99ff99;*/
+            text-align: left;
+          }
+          #school li a:link, #school li a:visited {
+            background-color:  black;
+            color: white;
+            padding: 12px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            width: 100%;
+          }
+  
+          #school li a:hover {
+            background-color:black;
+
+          }
+          .card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 70%;
+            
+            
+          }
+          
+          .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+          }
+          
+          .container {
+            padding: 2px 16px;
+            background-color: white;
+            
+            
+          }
+          img {
+            opacity: 0.5;
+          }
+          /*card*/
+          .card1 {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin-left: 70%;
+            margin-top: -30%;
+            text-align: center;
+            font-family: arial;
+            background-color: white;
+          }
+          
+          .title {
+            color: grey;
+            font-size: 18px;
+          }
+          
+
+          
+          a {
+            text-decoration: none;
+            font-size: 22px;
+            color: black;
+          }
+          
+          button:hover, a:hover {
+            opacity: 0.7;
+          }
+          #profimg{
+            opacity: 1;
+          }
+    </style>
+</head>
+<body>
+    <!-- <img src="C:\Users\user\OneDrive\Desktop\superdream\portfolio\PROFESSIONAL_PIC.jpg" width="500px",heigth="500px",style="margin-padding:right"> -->
+
+    <ul class="home">
+        <li><a class="active" href="#home">ABOUT</a></li>
+        <li><a href="file:///C:/Users/user/OneDrive/Desktop/superdream/portfolio/project.html">PROJECTS</a></li>
+        <li><a href="file:///C:/Users/user/OneDrive/Desktop/superdream/portfolio/achievements.html">ACHIEVEMENTS AND CERTIFICATIONS </a></li>
+        
+      </ul>
+      <div class="row">
+        <div class="column side">
+          
+          <ul id="school">
+            <li><h3>ACADEMIC CREDENTIALS</h3></li>
+            <li ><a href="https://www.bitsathy.ac.in/">BANNARI AMMAN INSTITUTE OF TECHNOLOGY</a><br>
+                ARTIFICIAL INTELLIGENCE AND DATA SCIENCE<br>
+                CGPA: 9.11
+
+            </li>
+            <li><a href="https://theskvschools.com/">SKV VIDHYAASHRAM</a><br>
+              2018-2020 | THIRUCHENGODE<br>
+              PERCENTAGE: 80.8%
+            </li>
+            <li><a href="http://www.smvm2012.com/index.php">SHRI MAHARISHI VIDHYA MANDIR</a><br>
+              2016-2018 | DINDIGUL<br>
+              PERCENTAGE: 85.8.%
+
+            </li>
+
+          </ul>
+        </div>
+        
+
+
+        
+      </div>
+      <div class="column bottom">
+        <div class="card" >
+          <img src="language.PNG" alt="Avatar" width="100%;height: 135px;">
+          <div class="container">
+            <h4><b>LANGUAGES KNOWN</b></h4> 
+            <p>HINDI</p>
+            <p>ENGLISH</p>
+            <p>TAMIL</p>
+            <br>
+     
+          </div>
+        </div>
+      </div>
+      <div class="column bottom1">
+        <div class="card" >
+          <img src="tools.jpeg" alt="Avatar" width="100%;height: 135px;">
+          <div class="container">
+            <h4><b>TOOLS / PLATFORMS</b></h4> 
+            <p>TABLEAU</p>
+            <p>JUPYTER</p>
+            <p>GOOGLE COLAB</p>    
+          </div>
+        </div>
+
+      </div>
+      </div>
+      <div class="column bottom3">
+        <div class="card" >
+          <img src="personalskills.jpg" alt="Avatar" width="100%" height="80px">
+          <div class="container">
+            <h4><b>PERSONAL SKILLS</b></h4> 
+            <p>LEADERSHIP</p>
+            <p>CREATIVE THINKING</p>
+            <p>EFFECTIVE COMMUNICATION</p>    
+          </div>
+        </div>
+
+      </div>
+
+        <div class="column bottom4">
+          <div class="card">
+            <img src="techskills.jfif" alt="Avatar" style="width:100%;height:70px">
+            <div class="container">
+              <h4><b>TECHNICAL SKILLS</b></h4> 
+              <p>C PROGRAMMING</p>
+              <p>PYTHON</p>
+              <p>HTML</p>
+              <p>CSS</p>
+            </div>
+          </div>          
+        </div>
+        <div class="column bottom5">
+          <div class="card" >
+            <img src="areasof.jfif" alt="Avatar" style="width:100%;height: 80px;">
+            <div class="container">
+              <h4><b>AREAS OF INTEREST</b></h4> 
+              <p>MACHINE LEARNING</p>
+              <p>DEEP LEARNING</p>
+              <br>
+              <br>
+             
+              
+            
+            </div>
+          </div>
+
+        </div>
+        <div class="column bottom2">
+          <div class="card" >
+            <img src="volunteer.jfif" alt="Avatar" width="100%" height="80px">
+            <div class="container">
+              <h4><b>VOLUNTEERING</b></h4> 
+              <p>DECODER</p>
+              <br>
+              <br>
+              <br>
+              <br> 
+              <br>
+              <br>        
+            </div>
+          </div>
+          </div>
+          <div class="card1">
+            <div>
+              <img id="profimg"src="PROFESSIONAL_PIC.jpg" alt="prof pic" style="width:70%">
+            </div>
+            
+            <h3>SHANTHOSHINI DEVI K</h3>
+            <p class="title">DATASCIENCE ENTHUSIAST</p>
+            <p><i class="fa fa-phone"></i>&nbsp;&nbsp;9942030041</p>
+
+            <p><i class="fa fa-envelope-o"></i>&nbsp;shanthoshini02@gmail.com</p>
+            <div style="margin: 24px 0;">
+              
+              <a href="https://github.com/shantho-shini"><i class="fa fa-git"></i>&nbsp;</a>  
+              <a href="https://www.linkedin.com/in/shanthoshini-devi-k-a4a9b120b/"><i class="fa fa-linkedin"></i></a>  
+              
+            </div>
+            
+          </div>
+
+      
+      
+</body>
+</html>
